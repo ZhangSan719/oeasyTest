@@ -1,10 +1,27 @@
-
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>TEST</title>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function audioAutoPlay(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+            document.addEventListener("WeixinJsBridgeReady", function () {
+                audio.play();
+            }, false);
+            document.addEventListener("YixinJsBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+    </script>
 </head>
-<body>
+<body onload="audioAutoPlay('bgm');">
+<audio autoplay="autoplay" id="bgm" preload="auto" src="wav/Dum.mp3"></audio>
+<div id="c">春</div>
+<div id="x">夏</div>
+<div id="q">秋</div>
+<div id="d">冬</div>
 </body>
 </html>
