@@ -1,0 +1,102 @@
+html, body, div {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+div {
+    height: 100%;
+    font-size: 180px;
+    position: absolute;
+    text-align: center;
+    padding-top: 30%;
+}
+
+#c {
+    background-image: url("../img/01.png");
+    animation: c 7s infinite;
+}
+
+#x {
+    background-image: url("../img/02.png");
+    animation: x 7s infinite;
+}
+
+#q {
+    background-image: url("../img/03.png");
+    background-size: 100% 100%;
+    animation: q 7s infinite;
+}
+
+#d {
+    background-image: url("../img/04.png");
+    color: white;
+    animation: d 7s infinite;
+}
+
+
+@keyframes c {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 100
+    }
+    40% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes x {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    40% {
+        opacity: 100
+    }
+    60% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes q {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 100
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes d {
+    0% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0
+    }
+    80% {
+        opacity: 100
+    }
+    100% {
+        opacity: 0
+    }
+}
